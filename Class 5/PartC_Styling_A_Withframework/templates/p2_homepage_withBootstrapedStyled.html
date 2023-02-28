@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}"> 
+        <!-- important to note, that the location of filename by default, is going to look for things in a 'static' folder -->
+    </head>
+    <body>
+
+
+
+
+
+
+
+        <h1> This is a header</h1>
+        <!-- bootstrap provides us specific class='xyz' where we can define what styling we want to apply -->
+        <button class="btn btn-primary"> Click 1 </button> <!-- class="btn btn-primary" it is telling the styling we want to apply based on https://getbootstrap.com/docs/5.2/components/buttons/  -->
+        <button class="btn btn-success"> Click 2 </button> <!-- class="btn btn-primary" it is telling the styling we want to apply based on https://getbootstrap.com/docs/5.2/components/buttons/  -->
+        <p> This is a paragraph</p>
+
+
+        <!-- now lets take a look at something that bootstrap can provide us, a card! 
+        https://getbootstrap.com/docs/5.2/components/card/ -->
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div> 
+
+
+
+
+
+
+
+
+    </body>
+
+  
+    
+</html>
