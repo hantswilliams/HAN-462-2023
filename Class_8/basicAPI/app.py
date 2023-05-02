@@ -16,10 +16,10 @@ def students():
     df = pd.read_csv('datafile.csv')
     return df.to_json(orient='records')
 
-@app.route('/api/v1/students/<int:limit>')
-def students_limit(limit):
+@app.route('/api/v1/students/<int:number>')
+def students_limit(number):
     df = pd.read_csv('datafile.csv')
-    df = df.head(limit)
+    df = df.head(number)
     return df.to_json(orient='records')
 
 
